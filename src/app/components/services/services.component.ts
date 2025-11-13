@@ -15,10 +15,10 @@ interface Service {
     <section class="section-container bg-white">
       <div class="text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          ¿Qué hacemos?
+          Nuestras Soluciones
         </h2>
         <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-          Soluciones inteligentes diseñadas para impulsar tu negocio
+          Automatización y optimización de procesos administrativos con Inteligencia Artificial
         </p>
       </div>
 
@@ -39,24 +39,24 @@ interface Service {
 export class ServicesComponent {
   services: Service[] = [
     {
-      icon: '🤖',
-      title: 'Automatización de Procesos',
-      description: 'Optimizamos tus operaciones internas mediante sistemas inteligentes que reducen tareas manuales y aumentan la eficiencia.'
+      icon: '⚙️',
+      title: 'Automatización de Procesos Administrativos',
+      description: 'Optimizamos y automatizamos tus procesos administrativos mediante sistemas inteligentes que reducen tareas manuales, eliminan errores y aumentan la eficiencia operativa.'
     },
     {
-      icon: '💬',
-      title: 'Chatbots Empresariales',
-      description: 'Asistentes virtuales personalizados que atienden a tus clientes 24/7, mejorando la experiencia y liberando tiempo de tu equipo.'
+      icon: '🤖',
+      title: 'Agentes de IA Personalizados',
+      description: 'Desarrollamos agentes de inteligencia artificial como Zenubot, diseñados específicamente para tu negocio, que optimizan procesos y mejoran la productividad.'
     },
     {
       icon: '🔗',
-      title: 'Integraciones de IA',
-      description: 'Conectamos herramientas de IA con tus sistemas existentes para crear flujos de trabajo más inteligentes y productivos.'
+      title: 'Integraciones Inteligentes',
+      description: 'Conectamos herramientas de IA con tus sistemas existentes para crear flujos de trabajo automatizados y optimizados que se adaptan a tu operación.'
     },
     {
       icon: '📊',
-      title: 'Consultoría Digital',
-      description: 'Acompañamiento estratégico en tu transformación digital, identificando oportunidades y diseñando soluciones a medida.'
+      title: 'Optimización de Procesos',
+      description: 'Analizamos y optimizamos tus procesos administrativos identificando cuellos de botella y oportunidades de mejora con soluciones tecnológicas a medida.'
     }
   ];
 }

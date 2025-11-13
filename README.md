@@ -1,6 +1,6 @@
-# Mente Zenú - Landing Page
+# ZenuLab - Landing Page
 
-Landing page profesional y moderna para Mente Zenú, una agencia de inteligencia artificial y automatización orientada a MiPymes.
+Landing page profesional y moderna para ZenuLab, una empresa que crea soluciones de software con identidad colombiana, especializada en automatización y optimización de procesos administrativos con Inteligencia Artificial.
 
 ## 🚀 Tecnologías
 
@@ -73,7 +73,21 @@ npm run build
 
 Los archivos se generarán en la carpeta `dist/mente-zenu-landing`.
 
+## 🖼️ Logo de ZenuLab
+
+Para agregar el logo de ZenuLab:
+
+1. Coloca el archivo del logo (preferiblemente en formato SVG) en la carpeta `src/assets/`
+2. Nombra el archivo como `zenulab-logo.svg`
+3. El logo aparecerá automáticamente en:
+   - Hero section (sección principal)
+   - Footer (pie de página)
+
+Si el logo no se encuentra, se mostrará un texto alternativo con el nombre "ZenuLab" en gradiente.
+
 ## 📝 Licencia
 
-© 2025 Mente Zenú. Todos los derechos reservados.
+© 2025 ZenuLab. Todos los derechos reservados.
+
+**Innovación que Fluye, Raíces que Crecen**
 

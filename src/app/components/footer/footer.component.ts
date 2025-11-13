@@ -11,11 +11,24 @@ import { CommonModule } from '@angular/common';
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <!-- Brand -->
           <div>
-            <h3 class="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-400">
-              Mente Zenú
-            </h3>
-            <p class="text-gray-400 mb-4">
-              Transformando MiPymes con inteligencia artificial y automatización.
+            <div class="mb-4">
+              <img 
+                src="assets/zenulab-logo.svg" 
+                alt="ZenuLab Logo" 
+                class="h-12 mb-2"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+              <div class="hidden text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-yellow-400 via-blue-500 to-blue-700">
+                ZenuLab
+              </div>
+            </div>
+            <p class="text-gray-400 mb-2">
+              Soluciones de software con identidad colombiana
+            </p>
+            <p class="text-gray-400 mb-4 text-sm">
+              Automatización y optimización de procesos administrativos con Inteligencia Artificial
+            </p>
+            <p class="text-gray-500 text-sm italic mb-4">
+              Innovación que Fluye, Raíces que Crecen
             </p>
             <div class="flex gap-4">
               <a href="#" class="text-gray-400 hover:text-primary-400 transition-colors">
@@ -40,10 +53,10 @@ import { CommonModule } from '@angular/common';
           <div>
             <h4 class="text-lg font-semibold mb-4">Servicios</h4>
             <ul class="space-y-2 text-gray-400">
-              <li><a href="#" class="hover:text-white transition-colors">Automatización</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Chatbots</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Integraciones IA</a></li>
-              <li><a href="#" class="hover:text-white transition-colors">Consultoría</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Automatización de Procesos</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Agentes de IA</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Optimización Administrativa</a></li>
+              <li><a href="#" class="hover:text-white transition-colors">Integraciones Inteligentes</a></li>
             </ul>
           </div>
 
@@ -62,16 +75,16 @@ import { CommonModule } from '@angular/common';
           <div>
             <h4 class="text-lg font-semibold mb-4">Contacto</h4>
             <ul class="space-y-2 text-gray-400">
-              <li>📧 contacto&#64;mentezenu.com</li>
-              <li>📱 +57 300 123 4567</li>
-              <li>📍 Colombia</li>
+              <li>📧 contactozenulab&#64;gmail.com</li>
+              <li>📱 +57 314 471 4547</li>
+              <li>📍 Montería y Córdoba, Colombia</li>
             </ul>
           </div>
         </div>
 
         <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p class="text-gray-400 text-sm">
-            © 2025 Mente Zenú. Todos los derechos reservados.
+            © 2025 ZenuLab. Todos los derechos reservados.
           </p>
           <div class="flex gap-6 mt-4 md:mt-0">
             <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">

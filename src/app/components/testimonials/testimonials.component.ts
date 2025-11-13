@@ -20,7 +20,7 @@ interface Testimonial {
           Lo que dicen nuestros clientes
         </h2>
         <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-          Empresas que han transformado sus procesos con nosotros
+          Empresas que han automatizado y optimizado sus procesos administrativos con ZenuLab
         </p>
       </div>
 
@@ -65,21 +65,21 @@ export class TestimonialsComponent {
       name: 'María González',
       company: 'TechSolutions S.A.',
       role: 'Directora de Operaciones',
-      text: 'Mente Zenú transformó completamente nuestros procesos internos. La automatización nos ahorró más del 40% de tiempo en tareas administrativas.',
+      text: 'ZenuLab transformó completamente nuestros procesos administrativos. La automatización nos ahorró más del 40% de tiempo en tareas manuales y eliminó errores operativos.',
       avatar: 'MG'
     },
     {
       name: 'Carlos Ramírez',
       company: 'Innovación Retail',
       role: 'CEO',
-      text: 'El chatbot que implementaron ha mejorado significativamente la atención a nuestros clientes. Nuestro equipo puede enfocarse en tareas más estratégicas.',
+      text: 'El agente de IA que desarrollaron ha optimizado nuestros procesos administrativos. Nuestro equipo puede enfocarse en tareas más estratégicas mientras la automatización gestiona lo operativo.',
       avatar: 'CR'
     },
     {
       name: 'Ana Martínez',
       company: 'Servicios Digitales Plus',
       role: 'Gerente General',
-      text: 'La consultoría y acompañamiento fueron excepcionales. Nos ayudaron a identificar oportunidades que no habíamos considerado antes.',
+      text: 'La consultoría y acompañamiento de ZenuLab fueron excepcionales. Nos ayudaron a identificar oportunidades de automatización en procesos que no habíamos considerado optimizar.',
       avatar: 'AM'
     }
   ];

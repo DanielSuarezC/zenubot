@@ -15,11 +15,26 @@ import { CommonModule } from '@angular/common';
       </div>
 
       <div class="section-container relative z-10 text-center animate-fade-in">
-        <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 animate-slide-up">
-          Transforma tu <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600">MiPyme</span> con Inteligencia Artificial
+        <!-- Logo ZenuLab -->
+        <div class="mb-8 animate-slide-up">
+          <img 
+            src="assets/zenulab-logo.svg" 
+            alt="ZenuLab Logo" 
+            class="h-24 md:h-32 mx-auto"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <div class="hidden text-6xl md:text-8xl font-bold">
+            <span class="text-transparent bg-clip-text bg-gradient-to-b from-yellow-400 via-blue-500 to-blue-700">ZenuLab</span>
+          </div>
+        </div>
+        
+        <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 animate-slide-up" style="animation-delay: 0.1s;">
+          Soluciones de Software con <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-secondary-600">Identidad Colombiana</span>
         </h1>
-        <p class="text-xl md:text-2xl text-gray-700 mb-10 max-w-3xl mx-auto animate-slide-up" style="animation-delay: 0.2s;">
-          Automatizamos tus procesos para que te concentres en hacer crecer tu negocio
+        <p class="text-xl md:text-2xl text-gray-700 mb-4 max-w-3xl mx-auto animate-slide-up" style="animation-delay: 0.2s;">
+          Automatizamos y optimizamos tus procesos administrativos con Inteligencia Artificial
+        </p>
+        <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto animate-slide-up" style="animation-delay: 0.3s;">
+          Innovación que Fluye, Raíces que Crecen
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slide-up" style="animation-delay: 0.4s;">
           <button 

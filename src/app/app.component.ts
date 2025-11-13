@@ -34,6 +34,6 @@ import { FooterComponent } from './components/footer/footer.component';
   styles: []
 })
 export class AppComponent {
-  title = 'Mente Zenú';
+  title = 'ZenuLab - Soluciones de Software con Identidad Colombiana';
 }
 

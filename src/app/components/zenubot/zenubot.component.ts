@@ -9,10 +9,13 @@ import { CommonModule, DOCUMENT } from '@angular/common';
     <section class="section-container bg-gradient-to-br from-gray-50 to-primary-50">
       <div class="text-center mb-12">
         <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          Interactúa con <span class="text-primary-600">Zenubot</span>
+          Conoce a <span class="text-primary-600">Zenubot</span>
         </h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Habla con nuestro asistente Zenubot para contarnos sobre tu negocio y obtén asesoría personalizada.
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-2">
+          Nuestro agente de inteligencia artificial diseñado por ZenuLab
+        </p>
+        <p class="text-lg text-gray-500 max-w-2xl mx-auto">
+          Habla con Zenubot para contarnos sobre tu negocio y descubre cómo podemos automatizar y optimizar tus procesos administrativos.
         </p>
       </div>
 
@@ -25,7 +28,7 @@ import { CommonModule, DOCUMENT } from '@angular/common';
               </div>
               <div>
                 <h3 class="text-xl font-bold">Zenubot</h3>
-                <p class="text-sm opacity-90">Asistente de Mente Zenú</p>
+                <p class="text-sm opacity-90">Agente de IA de ZenuLab</p>
               </div>
             </div>
           </div>
@@ -40,7 +43,7 @@ import { CommonModule, DOCUMENT } from '@angular/common';
             <div>
               <h4 class="font-bold text-gray-900 mb-2">¿Qué hace Zenubot?</h4>
               <p class="text-gray-700">
-                Zenubot recopila tus necesidades y te conecta con nuestro equipo para diseñar soluciones de inteligencia artificial a medida.
+                Zenubot es un agente de inteligencia artificial desarrollado por ZenuLab. Recopila información sobre tus procesos administrativos y te conecta con nuestro equipo para diseñar soluciones de automatización y optimización a medida para tu negocio.
               </p>
             </div>
           </div>
@@ -141,7 +144,7 @@ export class ZenubotComponent implements AfterViewInit, OnDestroy {
       configuration: {
         version: 'v2',
         botName: 'Zenubot',
-        botDescription: '🤖 Soy Zenubot, el asistente inteligente de Mente Zenú. Ayudo a emprendedores y dueños de MiPymes en Montería y Córdoba a descubrir cómo la automatización y la inteligencia artificial pueden impulsar sus negocios. 💡',
+        botDescription: '🤖 Soy Zenubot, un agente de inteligencia artificial desarrollado por ZenuLab. Ayudo a emprendedores y dueños de MiPymes en Montería y Córdoba a descubrir cómo la automatización y optimización de procesos administrativos con IA pueden impulsar sus negocios. 💡',
         website: {},
         email: {email: 'contactozenulab@gmail.com'},
         phone: {phone: '+57 3144714547'},

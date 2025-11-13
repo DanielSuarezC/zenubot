@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
           Agenda tu <span class="text-primary-600">asesoría gratuita</span>
         </h2>
         <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-          Completa el formulario y nuestro equipo se pondrá en contacto contigo
+          Completa el formulario y el equipo de ZenuLab se pondrá en contacto contigo para analizar cómo podemos automatizar y optimizar tus procesos administrativos
         </p>
       </div>
 
@@ -119,7 +119,7 @@ import { FormsModule } from '@angular/forms';
             <div class="text-center">
               <div class="text-6xl mb-4">✅</div>
               <h3 class="text-3xl font-bold text-gray-900 mb-4">
-                ¡Gracias por confiar en Mente Zenú!
+                ¡Gracias por confiar en ZenuLab!
               </h3>
               <p class="text-lg text-gray-700 mb-6">
                 Recibirás en tu correo el resumen de requerimientos y el enlace de tu reunión.
