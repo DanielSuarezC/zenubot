@@ -30,7 +30,7 @@ import { CommonModule, DOCUMENT } from '@angular/common';
             </div>
           </div>
           <div class="p-6">
-            <div id="webchat" class="webchat-container"></div>
+            <div id="bp-embedded-webchat"></div>
           </div>
         </div>
 
@@ -50,21 +50,25 @@ import { CommonModule, DOCUMENT } from '@angular/common';
   `,
   styles: [
     `
-      :host ::ng-deep #webchat .bpWebchat {
-        position: unset;
-        width: 100%;
-        height: 100%;
-        max-height: 100%;
-        max-width: 100%;
-      }
-
-      :host ::ng-deep #webchat .bpFab {
-        display: none;
-      }
-
-      .webchat-container {
+      :host ::ng-deep #bp-embedded-webchat {
+        position: relative;
         width: 100%;
         height: 500px;
+      }
+
+      :host ::ng-deep #bp-embedded-webchat .bpWebchat {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        max-height: 100% !important;
+      }
+
+      :host ::ng-deep #bp-embedded-webchat .bpFab {
+        display: none;
       }
     `
   ]
@@ -136,29 +140,29 @@ export class ZenubotComponent implements AfterViewInit, OnDestroy {
       botId: '25d96f48-f43b-427c-a5d6-952ecfbeacf4',
       configuration: {
         version: 'v2',
-        botName: 'Brand Assistant',
-        botDescription: '',
+        botName: 'Zenubot',
+        botDescription: '🤖 Soy Zenubot, el asistente inteligente de Mente Zenú. Ayudo a emprendedores y dueños de MiPymes en Montería y Córdoba a descubrir cómo la automatización y la inteligencia artificial pueden impulsar sus negocios. 💡',
         website: {},
-        email: {},
-        phone: {},
+        email: {email: 'contactozenulab@gmail.com'},
+        phone: {phone: '+57 3144714547'},
         termsOfService: {},
         privacyPolicy: {},
-        color: '#3276EA',
+        color: '#159F48',
         variant: 'solid',
         headerVariant: 'glass',
         themeMode: 'light',
         fontFamily: 'inter',
         radius: 4,
-        feedbackEnabled: false,
+        feedbackEnabled: true,
         footer: '[⚡ by Botpress](https://botpress.com/?from=webchat)',
-        soundEnabled: false,
-        proactiveMessageEnabled: false,
-        proactiveBubbleMessage: 'Hi! 👋 Need help?',
+        soundEnabled: true,
+        proactiveMessageEnabled: true,
+        proactiveBubbleMessage: '¿Cuál es el proceso de tu negocio que más te gustaría automatizar o mejorar con ayuda de la tecnología?',
         proactiveBubbleTriggerType: 'afterDelay',
         proactiveBubbleDelayTime: 10
       },
       clientId: '96122d4a-eff7-459e-bf53-3a9c2bad7d19',
-      selector: '#webchat'
+      selector: '#bp-embedded-webchat'
     });
 
     this.botpressInitialized = true;

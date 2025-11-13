@@ -16,7 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
     // RouterOutlet,
     HeroComponent,
     ServicesComponent,
-    // ZenubotComponent,
+    ZenubotComponent,
     AppointmentComponent,
     TestimonialsComponent,
     FooterComponent
@@ -25,7 +25,7 @@ import { FooterComponent } from './components/footer/footer.component';
     <div class="min-h-screen">
       <app-hero></app-hero>
       <app-services></app-services>
-      <!-- <app-zenubot></app-zenubot> -->
+      <app-zenubot></app-zenubot>
       <app-appointment></app-appointment>
       <app-testimonials></app-testimonials>
       <app-footer></app-footer>
