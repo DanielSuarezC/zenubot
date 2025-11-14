@@ -80,6 +80,8 @@ export class ZenubotComponent implements AfterViewInit, OnDestroy {
   private readonly scriptId = 'botpress-webchat-script';
   private botpressInitialized = false;
   private readyHandlerRegistered = false;
+  private proactiveBubbleTimeoutId: number | null = null;
+  private readonly proactiveBubbleDelaySeconds = 10;
 
   constructor(
     private renderer: Renderer2,
@@ -91,6 +93,11 @@ export class ZenubotComponent implements AfterViewInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
+    if (this.proactiveBubbleTimeoutId) {
+      window.clearTimeout(this.proactiveBubbleTimeoutId);
+      this.proactiveBubbleTimeoutId = null;
+    }
+
     if (window.botpress) {
       try {
         window.botpress.close();
@@ -129,7 +136,7 @@ export class ZenubotComponent implements AfterViewInit, OnDestroy {
 
     if (!this.readyHandlerRegistered) {
       window.botpress.on('webchat:ready', () => {
-        window.botpress?.open();
+        this.scheduleProactiveBubble();
       });
       this.readyHandlerRegistered = true;
     }
@@ -159,16 +166,32 @@ export class ZenubotComponent implements AfterViewInit, OnDestroy {
         feedbackEnabled: true,
         footer: '[⚡ by Botpress](https://botpress.com/?from=webchat)',
         soundEnabled: true,
+        composerPlaceholder: '¿Qué proceso de tu negocio te gustaría automatizar o mejorar hoy?',
         proactiveMessageEnabled: true,
         proactiveBubbleMessage: '¿Cuál es el proceso de tu negocio que más te gustaría automatizar o mejorar con ayuda de la tecnología?',
         proactiveBubbleTriggerType: 'afterDelay',
-        proactiveBubbleDelayTime: 10
+        proactiveBubbleDelayTime: this.proactiveBubbleDelaySeconds
       },
       clientId: '96122d4a-eff7-459e-bf53-3a9c2bad7d19',
       selector: '#bp-embedded-webchat'
     });
 
     this.botpressInitialized = true;
+  }
+
+  private scheduleProactiveBubble(): void {
+    if (this.proactiveBubbleTimeoutId) {
+      window.clearTimeout(this.proactiveBubbleTimeoutId);
+    }
+
+    this.proactiveBubbleTimeoutId = window.setTimeout(() => {
+      const botpress = window.botpress as (Window['botpress'] & {
+        showMessagePreview?: () => void;
+      }) | undefined;
+
+      botpress?.showMessagePreview?.();
+      this.proactiveBubbleTimeoutId = null;
+    }, this.proactiveBubbleDelaySeconds * 1000);
   }
 }
 
