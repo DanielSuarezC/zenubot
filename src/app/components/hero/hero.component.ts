@@ -18,12 +18,12 @@ import { CommonModule } from '@angular/common';
         <!-- Logo ZenuLab -->
         <div class="mb-8 animate-slide-up">
           <img 
-            src="assets/zenulab-logo.svg" 
+            src="assets/zenulab_imagotipo.png" 
             alt="ZenuLab Logo" 
-            class="h-24 md:h-32 mx-auto"
+            class="h-96 md:h-40 mx-auto"
             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <div class="hidden text-6xl md:text-8xl font-bold">
-            <span class="text-transparent bg-clip-text bg-gradient-to-b from-yellow-400 via-blue-500 to-blue-700">ZenuLab</span>
+            <!-- <span class="text-transparent bg-clip-text bg-gradient-to-b from-yellow-400 via-blue-500 to-blue-700">ZenuLab</span> -->
           </div>
         </div>
         

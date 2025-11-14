@@ -5,6 +5,7 @@ declare global {
       init: (config: unknown) => void;
       open: () => void;
       close: () => void;
+      showMessagePreview?: () => void;
     };
   }
 }
