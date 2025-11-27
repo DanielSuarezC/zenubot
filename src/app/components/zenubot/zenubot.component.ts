@@ -24,7 +24,11 @@ import { CommonModule, DOCUMENT } from '@angular/common';
           <div class="bg-gradient-to-r from-primary-600 to-secondary-600 p-6 text-white">
             <div class="flex items-center gap-3">
               <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-2xl">
-                🤖
+              <img 
+                src="assets/zenulab_bot.png" 
+                alt="Zenubot Logo" 
+                class="w-10 h-10 rounded-full object-cover"
+                onerror="this.style.display='none';">
               </div>
               <div>
                 <h3 class="text-xl font-bold">Zenubot</h3>
@@ -43,8 +47,9 @@ import { CommonModule, DOCUMENT } from '@angular/common';
             <div>
               <h4 class="font-bold text-gray-900 mb-2">¿Qué hace Zenubot?</h4>
               <p class="text-gray-700">
-                Zenubot es un agente de inteligencia artificial desarrollado por ZenuLab. Recopila información sobre tus procesos administrativos y te conecta con nuestro equipo para diseñar soluciones de automatización y optimización a medida para tu negocio.
-              </p>
+              ZenuBot es tu parcero digital, un asistente inteligente pa' las MiPymes de Montería que te ayuda a organizar mejor tu negocio, mejorar tus ventas y sacar reporticos sin tanta vuelta.
+              Tú le hablas, él te entiende, te aconseja y hasta recuerda tu info pa' seguirte ayudando después.
+                Así de sabroso y sin complicación!
             </div>
           </div>
         </div>

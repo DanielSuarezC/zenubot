@@ -6,12 +6,36 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary-50 via-white to-secondary-50">
+    <section
+      class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-yellow-50 via-white to-red-50"
+      style="background-image: radial-gradient(circle at 10% 20%, rgba(250,204,21,0.25), transparent 55%), radial-gradient(circle at 80% 0%, rgba(37,99,235,0.2), transparent 50%), radial-gradient(circle at 85% 80%, rgba(220,38,38,0.2), transparent 45%);"
+    >
       <!-- Background decoration -->
       <div class="absolute inset-0 overflow-hidden">
+        <div
+          class="absolute inset-0 opacity-30 mix-blend-multiply"
+          aria-hidden="true"
+          style="background-image: repeating-linear-gradient(35deg, rgba(250,204,21,0.25) 0px, rgba(250,204,21,0.25) 60px, rgba(37,99,235,0.25) 60px, rgba(37,99,235,0.25) 120px, rgba(220,38,38,0.25) 120px, rgba(220,38,38,0.25) 180px);"
+        ></div>
         <div class="absolute top-20 left-10 w-72 h-72 bg-primary-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float"></div>
         <div class="absolute top-40 right-10 w-72 h-72 bg-secondary-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float" style="animation-delay: 1s;"></div>
         <div class="absolute -bottom-8 left-1/2 w-72 h-72 bg-primary-300 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-float" style="animation-delay: 2s;"></div>
+        <div
+          class="absolute inset-x-0 bottom-0 h-32 opacity-50"
+          aria-hidden="true"
+          style="background-image: linear-gradient(180deg, rgba(250,204,21,0.65) 0%, rgba(250,204,21,0.65) 33%, rgba(37,99,235,0.55) 33%, rgba(37,99,235,0.55) 66%, rgba(220,38,38,0.55) 66%, rgba(220,38,38,0.55) 100%); box-shadow: 0 -20px 40px rgba(0,0,0,0.08);"
+        ></div>
+        <img
+          src="assets/sombrero-vueltiao.png"
+          alt="Sombrero vueltiao estilizado"
+          class="hidden lg:block absolute -right-10 top-16 w-72 drop-shadow-2xl sombrero-float"
+        />
+        <img
+          src="assets/sombrero-vueltiao.png"
+          alt="Sombrero vueltiao estilizado"
+          class="hidden md:block absolute -left-6 bottom-8 w-56 opacity-70 sombrero-float"
+          style="transform: scaleX(-1); animation-delay: 1.5s;"
+        />
       </div>
 
       <div class="section-container relative z-10 text-center animate-fade-in">
@@ -42,11 +66,11 @@ import { CommonModule } from '@angular/common';
             class="btn-primary">
             Habla con Zenubot
           </button>
-          <button 
+          <!-- <button 
             (click)="scrollToAppointment()" 
             class="btn-secondary">
             Agenda una reunión
-          </button>
+          </button> -->
         </div>
       </div>
 
