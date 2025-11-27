@@ -17,7 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
     HeroComponent,
     ServicesComponent,
     ZenubotComponent,
-    AppointmentComponent,
+    // AppointmentComponent,
     TestimonialsComponent,
     FooterComponent
   ],
@@ -26,7 +26,7 @@ import { FooterComponent } from './components/footer/footer.component';
       <app-hero></app-hero>
       <app-services></app-services>
       <app-zenubot></app-zenubot>
-      <app-appointment></app-appointment>
+      <!-- <app-appointment></app-appointment> -->
       <app-testimonials></app-testimonials>
       <app-footer></app-footer>
     </div>

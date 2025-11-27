@@ -34,3 +34,24 @@
   }
 }
 
+@layer utilities {
+  .sombrero-float {
+    animation: sombreroSway 8s ease-in-out infinite;
+  }
+}
+
+@keyframes sombreroSway {
+  0%, 100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+  25% {
+    transform: translateY(-6px) rotate(1deg);
+  }
+  50% {
+    transform: translateY(2px) rotate(-1deg);
+  }
+  75% {
+    transform: translateY(-4px) rotate(2deg);
+  }
+}
+
